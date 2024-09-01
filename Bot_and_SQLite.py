@@ -6,9 +6,10 @@ from aiogram.dispatcher.filters.state import State, StatesGroup
 from aiogram.utils import executor
 import sqlite3
 from datetime import datetime
+import config
 
-API_TOKEN = 'YOUR_BOT_TOKEN'
-ADMIN_ID = 123456789  # Замените на ID администратора
+API_TOKEN = config.token_api
+ADMIN_ID = "1048650123"  # Замените на ID администратора
 
 logging.basicConfig(level=logging.INFO)
 bot = Bot(token=API_TOKEN)
